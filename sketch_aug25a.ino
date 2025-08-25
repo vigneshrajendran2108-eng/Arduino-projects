@@ -100,7 +100,6 @@ bool detectBlackLine() {
   return false;  // No black line detected
 }
 
-// Function to stop motors
 void stopMotors() {
   analogWrite(speed_A, 0);
   analogWrite(speed_B, 0);
@@ -110,7 +109,6 @@ void stopMotors() {
   digitalWrite(in_B2, LOW);
 }
 
-// Function to reverse motors
 void reverseMotors() {
   digitalWrite(in_A1, HIGH);
   digitalWrite(in_A2, LOW);
@@ -120,7 +118,6 @@ void reverseMotors() {
   analogWrite(speed_B, 125);
 }
 
-// Function to move forward
 void moveForward() {
   digitalWrite(in_A1, LOW);
   digitalWrite(in_A2, HIGH);
